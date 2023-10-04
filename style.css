@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@1,200&family=Ubuntu&display=swap');
+*{
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+} 
+body{
+    background: rgb(245, 238, 238);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}  
+header{  
+    background:linear-gradient(to bottom, rgb(138, 133, 133) , rgb(55, 156, 182));
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+    text-transform: capitalize;
+       font-weight: 900px;
+}
+.list11 a{
+     text-decoration: none;
+    font-size: 20px;
+    color: black;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+.list11 a:hover{
+    color: blueviolet;
+}
+section{
+    padding: 300px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(rr.webp) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: rgb(114, 104, 104);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.main h2 span{
+   display: inline block;
+   margin: 10px;
+    color:  rgb(55, 156, 182);
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.main h3{
+    color: rgb(114,104,104);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 10px
+}    
+.main .btn{
+      color: black;
+      text-decoration: none;
+      background-color: rgb(55,156,182);
+      font-size: 15px;
+      font-weight: 600;
+      display: inline-block;
+      padding: 0.9375em 2.1875em;
+      letter-spacing: 2px;
+      border-radius: 20px;
+      margin-bottom: 35px;
+      transition: 0.7s;
+}
+.main .btn:hover{
+    background-color: rgb(138, 133, 133) ;
+    color: blueviolet;
+    transform: scale(1.1);
+}
+.social-icons a{
+   color: #000;
+   font-size: 30px;
+   padding-right: 30px;
+}
+.title{
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+.content{
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.card{
+    background:linear-gradient(to bottom, rgb(138, 133, 133) , rgb(55, 156, 182));
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1,1,1);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 15px;
+    justify-content: space-between;
+    transition: 3s;
+}
+.card:hover{
+    transform: scale(1.2);
+}
+.info p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.cards{
+    flex-direction: column-reverse;
+}
+.Knowledge{
+    background: rgb(138, 133, 133) ;
+}
+.Knowledge .content{
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+.Knowledg-card{
+    background-color: rgba(61, 152, 175, 0.623) ;
+    border: 2px solid #fff;
+    min-height: 12em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 4s;
+
+}
+.Knowledg-card:hover{
+    transform: scale(1.1);
+}
+.knowledge-imge img{
+    width: 100%;
+}
+.knowledge-info{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.about{
+    background:radial-gradient( rgb(138, 133, 133),rgba(61, 152, 175, 0.623),#fff);
+}
+.about .content{
+    margin-top: 25px;
+}
+.about-card{
+    min-height: 12em;
+    overflow: hidden;
+    margin: 20px;
+    transition: 4s; 
+}
+.about-card:hover{
+    transform: scale(1.4);
+}
+.about-info p{
+    font-size: 25px;
+}
+.contact-card{
+    background:linear-gradient(to bottom, rgb(138, 133, 133) , rgb(55, 156, 182));
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1,1,1);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 15px;
+    justify-content: space-between;
+    transition: 3s;
+}
+.contact-card:hover{
+    transform: scale(1.3);
+}
+.contact-info p{
+    font-size: 20px;
+}
+footer{
+    background:linear-gradient(to bottom, rgb(138, 133, 133) , rgb(5, 5, 5));
+  color: rgb(77, 131, 131);
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.footer p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.footer p:hover{
+    color: blueviolet;
+    font-style: normal;
+
+}
+@media (max-width:1023px){
+    header{padding: 12px 20px; }
+    .list11{padding-left: 10px;}
+    .title{font-size: 1.8em;}
+    section{padding: 80px 20px;}
+    .main h2{font-size: 1em;}
+    .main h3{font-size: 1.6em;}
+    .content{flex-direction: column;
+    align-items: center;}
+}
+@media (max-width:641px){
+    body{ font-size: 12px;}
+    .main h2{font-size: 0.8em;}
+    .main h3{font-size: 1.4em;}
+}
+@media(max-width:300px)
+{
+    body{
+        font-size: 10px;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
